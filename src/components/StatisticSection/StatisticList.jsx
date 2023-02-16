@@ -7,7 +7,7 @@ export default function StatisticList({stats}) {
     <ul className="stat-list">
       {stats.map(el => {
           const { id, label, percentage } = el;
-          console.log(id, label, percentage);
+
           return (
             <StatisticItem
             key = { id }
