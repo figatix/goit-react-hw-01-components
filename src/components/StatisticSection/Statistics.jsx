@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types'
+import StatisticList from '../StatisticSection/StatisticList'
 
 export default function Statistics({ title, stats }) {
 
@@ -6,19 +7,7 @@ export default function Statistics({ title, stats }) {
     <section className="statistics">
       {title && <h2 className="title">{title}</h2>}
 
-      <ul className="stat-list">
-        {stats.map(el => {
-            const { id, label, percentage } = el
-            return (
-              <li key={id} className="stat">
-                <span className="label">{label}</span>
-                <span className="percentage">{percentage}%</span>
-              </li>
-            )
-          })
-        }
-      </ul>
-      
+      <StatisticList stats={stats} />
     </section>
   )
 }
