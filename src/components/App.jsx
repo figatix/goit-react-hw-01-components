@@ -8,13 +8,16 @@ import data from "../dataSrc/data.json";
 import friends from "../dataSrc/friends.json";
 import transactions from "../dataSrc/transactions.json";
 
+import {StyledSection} from './styled.App'
+
+
 
 const { username, tag, location, avatar, stats } = userData;
 
 
 export const App = () => {
   return (
-    <section>
+    <StyledSection>
       <Profile
         username={username}
         tag={tag}
@@ -25,7 +28,7 @@ export const App = () => {
       <Statistics title="Upload stats" stats={data} />
       <FriendList friends={friends} />
       <TransactionHistory items={transactions} />
-    </section>
+    </StyledSection>
 
   )
 };

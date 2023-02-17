@@ -2,12 +2,14 @@
 import PropTypes from 'prop-types';
 import ProfileStatsList from "./ProfileStatsList";
 
+import {StyledProfile} from "./Profile.styled";
+
 export default function Profile(props) {
   
   const { username, tag, location, avatar, stats } = props;
 
   return (
-    <div className="profile">
+    <StyledProfile>
       <div className="description">
         <img
           src={avatar}
@@ -20,7 +22,7 @@ export default function Profile(props) {
       </div>
 
       <ProfileStatsList stats={stats} />
-    </div>
+    </StyledProfile>
   )
 }
 

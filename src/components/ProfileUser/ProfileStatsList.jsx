@@ -1,11 +1,15 @@
 import PropTypes from 'prop-types'
 import ProfileStatsItem from './ProfileStatsItem'
 
+import {StyledProfileStatsList} from './ProfileStatsList.styled'
+
 export default function ProfileStatsList({ stats }) {
   const { followers, views, likes } = stats;
 
+  // StyledProfileStatsList
+
   return (
-    <ul className="stats">
+    <StyledProfileStatsList className="stats">
       <ProfileStatsItem
         label="Followers"
         quantity={followers} />
@@ -15,7 +19,7 @@ export default function ProfileStatsList({ stats }) {
       <ProfileStatsItem
           label="Likes"
           quantity={likes} />
-    </ul>
+    </StyledProfileStatsList>
   )
 }
 
