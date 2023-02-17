@@ -2,6 +2,7 @@ import Profile from "./ProfileUser/Profile";
 import Statistics from "./StatisticSection/Statistics";
 import FriendList from "./FriendList/FriendList";
 import TransactionHistory from "./TransactionHistory/TransactionHistory";
+
 import userData from "../dataSrc/user.json";
 import data from "../dataSrc/data.json";
 import friends from "../dataSrc/friends.json";

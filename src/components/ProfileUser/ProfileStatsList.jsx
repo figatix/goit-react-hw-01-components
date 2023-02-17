@@ -1,4 +1,4 @@
-import PropsTypes from 'prop-types'
+import PropTypes from 'prop-types'
 import ProfileStatsItem from './ProfileStatsItem'
 
 export default function ProfileStatsList({ stats }) {
@@ -20,5 +20,10 @@ export default function ProfileStatsList({ stats }) {
 }
 
 ProfileStatsList.propTypes = {
-  stats: PropsTypes.objectOf(PropsTypes.number.isRequired)
+  stats: PropTypes.shape({
+    followers: PropTypes.number.isRequired,
+    likes: PropTypes.number.isRequired,
+    views: PropTypes.number.isRequired
+  }).isRequired
 }
+

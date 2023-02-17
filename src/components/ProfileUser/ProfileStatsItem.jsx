@@ -11,6 +11,9 @@ export default function ProfileStatsItem(props) {
 }
 
 ProfileStatsItem.propTypes = {
-  label: PropTypes.string.isRequired,
-  quantity: PropTypes.number.isRequired,
+  props: PropTypes.shape({
+    label: PropTypes.string.isRequired,
+    quantity: PropTypes.number.isRequired,
+  })
+  
 }
