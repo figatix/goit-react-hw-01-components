@@ -11,7 +11,7 @@ export const StyledStat = styled.li`
   width: 60px;
   height: 60px;
   
-  background-color: #F4E90B;
+  background-color: ${({bgcolor})=>bgcolor};
   border: 2px solid rgba(166,77,199,0.75);
   border-radius: 50%;
 

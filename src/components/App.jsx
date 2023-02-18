@@ -10,8 +10,6 @@ import transactions from "../dataSrc/transactions.json";
 
 import {StyledSection, StyledFriendTransaction} from './styled.App'
 
-
-
 const { username, tag, location, avatar, stats } = userData;
 
 

@@ -9,6 +9,7 @@ export const StyledFriendListItem = styled.li`
   min-width: 200px;
   border: 2px solid rgba(166,77,199,0.75);
   padding: 8px;
+  box-shadow: 4px 4px 8px -1px rgba(166,77,199,0.75);
 
   & .status{
     width:12px;
@@ -27,6 +28,7 @@ export const StyledFriendListItem = styled.li`
     height: 72px;
     border: 1px solid green;
     padding: 6px;
+    border-radius: 4px;
     
     &.off{
       border: 1px solid red;

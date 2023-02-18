@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import StatisticItem from './StatisticItem';
 
 import {StyledStatList} from "./StatisticList.styled"; 
-
+import getRandomHexColor from "../../utils/getRandomHexColor";
 
 export default function StatisticList({ stats }) {
 
@@ -16,6 +16,7 @@ export default function StatisticList({ stats }) {
             key={id}
             label={label}
             percentage={percentage}
+            color={getRandomHexColor()}
           />
         )
       })
