@@ -2,13 +2,15 @@ import PropTypes from 'prop-types';
 import TransHisTabHead from './TransHisTabHead'
 import TransHisTabBody from './TransHisTabBody';
 
+import {StyledTransactionHistory} from './TransactionHistory.styled'
+
 
 export default function TransactionHistory({items}) {
   return (
-    <table className="transaction-history">
+    <StyledTransactionHistory>
       <TransHisTabHead />
       <TransHisTabBody items={items} />
-    </table>
+    </StyledTransactionHistory>
   )
 }
 

@@ -7,8 +7,16 @@ export const StyledSection = styled.div`
   padding-right: 12px;
 
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
   flex-wrap: wrap;
   gap: 24px
 
+`
+
+export const StyledFriendTransaction = styled.div`
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+  width: 100%;
 `

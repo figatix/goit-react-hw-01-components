@@ -1,13 +1,14 @@
 
+import {StyledTransHisTabHead} from './TransHisTabHead.styled'
 
 export default function TransHisTabHead() {
   return (
-    <thead>
+    <StyledTransHisTabHead>
       <tr>
         <th>Type</th>
         <th>Amount</th>
         <th>Currency</th>
       </tr>
-    </thead>
+    </StyledTransHisTabHead>
   )
 }

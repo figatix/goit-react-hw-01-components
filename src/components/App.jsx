@@ -8,7 +8,7 @@ import data from "../dataSrc/data.json";
 import friends from "../dataSrc/friends.json";
 import transactions from "../dataSrc/transactions.json";
 
-import {StyledSection} from './styled.App'
+import {StyledSection, StyledFriendTransaction} from './styled.App'
 
 
 
@@ -26,8 +26,10 @@ export const App = () => {
         stats={stats}
       />
       <Statistics title="Upload stats" stats={data} />
-      <FriendList friends={friends} />
-      <TransactionHistory items={transactions} />
+      <StyledFriendTransaction>
+        <FriendList friends={friends} />
+        <TransactionHistory items={transactions} />
+      </StyledFriendTransaction>
     </StyledSection>
 
   )

@@ -1,10 +1,12 @@
 import PropTypes from 'prop-types';
 import TransHisTabItem from './TransHisTabItem'
 
+import {StyledTransHisTabBody} from './TransHisTabBody.styled'
 
 export default function TransHisTabBody({ items }) {
   return (
-    <tbody>
+    <StyledTransHisTabBody>
+
       {items.map((el) => {
         const { id, type, amount, currency } = el;
 
@@ -15,8 +17,9 @@ export default function TransHisTabBody({ items }) {
             amount={amount}
             currency={currency} />
         )
-      } ) }
-    </tbody>
+      })}
+      
+    </StyledTransHisTabBody>
   )
 }
 

@@ -2,12 +2,16 @@ import styled from 'styled-components'
 
 export const StyledProfile = styled.div`
 
-  width: 300px;
+  max-width: 300px;
   margin: 0 auto;
 
   border: 2px solid rgba(166,77,199,0.75);
   box-shadow: 11px 10px 19px -1px rgba(166,77,199,0.75);
 
+
+  & .avatar{
+    border-radius: 50%;
+  }
 
   & .description{
     background: linear-gradient(to left, #8e44ad, #c0392b); 

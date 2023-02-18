@@ -6,10 +6,8 @@ import {StyledProfileStatsList} from './ProfileStatsList.styled'
 export default function ProfileStatsList({ stats }) {
   const { followers, views, likes } = stats;
 
-  // StyledProfileStatsList
-
   return (
-    <StyledProfileStatsList className="stats">
+    <StyledProfileStatsList>
       <ProfileStatsItem
         label="Followers"
         quantity={followers} />
